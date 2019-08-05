@@ -66,7 +66,7 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 	
 	public void onFinish(ITestContext context) {
 		try {
-			 File directory = new File("./photo/");
+			 File directory = new File(PHOTO_PATH+BaseTest.datetime);
 			 File[] fList = directory.listFiles();
 			 for (File file : fList)
 				 if (file.isFile()){
