@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="bluestone.script.Offers"/>
+      <class name="bluestone.script.MonthlyPlan"/>
+      <class name="bluestone.script.Logo"/>
+      <class name="bluestone.script.Rings"/>
+      <class name="bluestone.script.Kadas"/>
+      <class name="bluestone.script.Stores"/>
+      <class name="bluestone.script.GoldCoins"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
