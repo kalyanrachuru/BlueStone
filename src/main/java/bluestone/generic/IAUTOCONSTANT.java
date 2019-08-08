@@ -11,7 +11,7 @@ public interface IAUTOCONSTANT {
 	
 	String XL_DATA_PATH = "./src/main/resources/data/BSinput.xlsx";
 	String XL_REPORT_PATH = "./src/main/resources/report/BSreport.xlsx";
-	String HTMLREPORTPATH = "./src/main/resources/report/BSreport.html";
+	String HTMLREPORTPATH = "./src/main/resources/report/";
 	String PHOTO_PATH = "./src/main/resources/photo/";
 	
 	String ENVIRONMENT = "Test";

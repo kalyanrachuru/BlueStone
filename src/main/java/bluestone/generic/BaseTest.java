@@ -30,7 +30,7 @@ abstract public class BaseTest implements IAUTOCONSTANT {
 		int mm = loc.toLocalTime().getMinute();
 		int DD = loc.getDayOfMonth();
 		String MMM = loc.getMonth().toString().substring(0,3);
-		datetime = DD+"-"+MMM+"-"+HH+"-"+mm+"/";
+		datetime = DD+"-"+MMM+"-"+HH+"-"+mm;
 	}
 	
 	@BeforeMethod
@@ -55,7 +55,7 @@ abstract public class BaseTest implements IAUTOCONSTANT {
 		}
 		else if(status==3)
 			skipcount++;
-		path = PHOTO_PATH+datetime+mn+".png";
+		path = PHOTO_PATH+datetime+"/"+mn+".png";
 		FWUtils.takeScreenshot(driver, path);
 		
 //		Thread.sleep(3000);

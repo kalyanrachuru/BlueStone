@@ -23,22 +23,22 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 	
 	
 	public void onTestStart(ITestResult result) {
-		test.log(Status.INFO, result.getName());
+		test.log(Status.INFO, "Started: "+result.getName());
 	}
 
 	
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, "Test Passed");
+		test.log(Status.PASS, "Passed: "+result.getName());
 	}
 
 	
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.FAIL, "Test Failed");
+		test.log(Status.FAIL, "Failed: "+result.getName());
 	}
 
 	
 	public void onTestSkipped(ITestResult result) {
-		test.log(Status.SKIP, "Test Skipped");		
+		test.log(Status.SKIP, "Skipped: "+result.getName());		
 	}
 
 	
@@ -48,7 +48,7 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 
 	
 	public void onStart(ITestContext context) {
-		reporter = new ExtentHtmlReporter(new File(HTMLREPORTPATH));
+		reporter = new ExtentHtmlReporter(new File(HTMLREPORTPATH+BaseTest.datetime+"-BSreport.html"));
 		reporter.config().setDocumentTitle("BlueStone Report");;
 		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setReportName("BlueStone Tests");

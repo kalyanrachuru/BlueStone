@@ -3,13 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="bluestone.script.Offers"/>
+	  <class name="bluestone.script.Offers"/>
       <class name="bluestone.script.MonthlyPlan"/>
-      <class name="bluestone.script.Logo"/>
+      <class name="bluestone.script.Stores"/>
       <class name="bluestone.script.Rings"/>
       <class name="bluestone.script.Kadas"/>
-      <class name="bluestone.script.Stores"/>
       <class name="bluestone.script.GoldCoins"/>
+      <class name="bluestone.script.Logo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
