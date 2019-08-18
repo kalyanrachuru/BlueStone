@@ -5,7 +5,10 @@
       <![CDATA[Page: Online Jewellery Shopping Store India | Buy Gold and Diamond jewellery with Latest Designs 2019 | BlueStone.com]]>
     </line>
     <line>
-      <![CDATA[Page: Stores | BlueStone.com]]>
+      <![CDATA[Logo is visible]]>
+    </line>
+    <line>
+      <![CDATA[Logo clicked]]>
     </line>
     <line>
       <![CDATA[Pass: 1]]>
@@ -17,41 +20,44 @@
       <![CDATA[Skip: 0]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26943" started-at="2019-08-07T10:17:27Z" finished-at="2019-08-07T10:17:54Z">
+  <suite name="Default suite" duration-ms="22008" started-at="2019-08-16T12:59:04Z" finished-at="2019-08-16T12:59:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26943" started-at="2019-08-07T10:17:27Z" finished-at="2019-08-07T10:17:54Z">
-      <class name="bluestone.script.Stores">
-        <test-method status="PASS" signature="setDateForReport()[pri:0, instance:bluestone.script.Stores@5702b3b1]" name="setDateForReport" is-config="true" duration-ms="106" started-at="2019-08-07T10:17:27Z" finished-at="2019-08-07T10:17:27Z">
+    <test name="Default test" duration-ms="22008" started-at="2019-08-16T12:59:04Z" finished-at="2019-08-16T12:59:26Z">
+      <class name="bluestone.script.Logo">
+        <test-method status="PASS" signature="setDateForReport()[pri:0, instance:bluestone.script.Logo@598067a5]" name="setDateForReport" is-config="true" duration-ms="97" started-at="2019-08-16T12:59:04Z" finished-at="2019-08-16T12:59:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDateForReport -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:bluestone.script.Stores@5702b3b1]" name="openBrowser" is-config="true" duration-ms="8566" started-at="2019-08-07T10:17:27Z" finished-at="2019-08-07T10:17:35Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:bluestone.script.Logo@598067a5]" name="openBrowser" is-config="true" duration-ms="7465" started-at="2019-08-16T12:59:04Z" finished-at="2019-08-16T12:59:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="getStoreMaps()[pri:0, instance:bluestone.script.Stores@5702b3b1]" name="getStoreMaps" duration-ms="17042" started-at="2019-08-07T10:17:35Z" finished-at="2019-08-07T10:17:53Z">
+        <test-method status="PASS" signature="verifyLogoConsistency()[pri:0, instance:bluestone.script.Logo@598067a5]" name="verifyLogoConsistency" duration-ms="12329" started-at="2019-08-16T12:59:12Z" finished-at="2019-08-16T12:59:24Z">
           <reporter-output>
             <line>
               <![CDATA[Page: Online Jewellery Shopping Store India | Buy Gold and Diamond jewellery with Latest Designs 2019 | BlueStone.com]]>
             </line>
             <line>
-              <![CDATA[Page: Stores | BlueStone.com]]>
+              <![CDATA[Logo is visible]]>
+            </line>
+            <line>
+              <![CDATA[Logo clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- getStoreMaps -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:bluestone.script.Stores@5702b3b1]" name="closeBrowser" is-config="true" duration-ms="1181" started-at="2019-08-07T10:17:53Z" finished-at="2019-08-07T10:17:54Z">
+        </test-method> <!-- verifyLogoConsistency -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:bluestone.script.Logo@598067a5]" name="closeBrowser" is-config="true" duration-ms="1959" started-at="2019-08-16T12:59:24Z" finished-at="2019-08-16T12:59:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getStoreMaps status=SUCCESS method=Stores.getStoreMaps()[pri:0, instance:bluestone.script.Stores@5702b3b1] output=Page: Online Jewellery Shopping Store India | Buy Gold and Diamond jewellery with Latest Designs 2019 | BlueStone.com]]]>
+                <![CDATA[[TestResult name=verifyLogoConsistency status=SUCCESS method=Logo.verifyLogoConsistency()[pri:0, instance:bluestone.script.Logo@598067a5] output=Page: Online Jewellery Shopping Store India | Buy Gold and Diamond jewellery with Latest Designs 2019 | BlueStone.com]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:bluestone.script.Stores@5702b3b1]" name="generateReport" is-config="true" duration-ms="303" started-at="2019-08-07T10:17:54Z" finished-at="2019-08-07T10:17:54Z">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:bluestone.script.Logo@598067a5]" name="generateReport" is-config="true" duration-ms="692" started-at="2019-08-16T12:59:27Z" finished-at="2019-08-16T12:59:27Z">
           <reporter-output>
             <line>
               <![CDATA[Pass: 1]]>
@@ -64,7 +70,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- bluestone.script.Stores -->
+      </class> <!-- bluestone.script.Logo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

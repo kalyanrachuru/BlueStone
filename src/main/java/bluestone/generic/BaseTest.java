@@ -12,14 +12,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 abstract public class BaseTest implements IAUTOCONSTANT {
 	public static WebDriver driver;
 	public static int passcount=0, failcount=0, skipcount=0;
 	public static String datetime="";
 	
 	static{
-		System.setProperty(CHROME_KEY, CHROME_VALUE);
-		System.setProperty(GECKO_KEY, GECKO_VALUE);
+//		System.setProperty(CHROME_KEY, CHROME_VALUE);
+//		System.setProperty(GECKO_KEY, GECKO_VALUE);
+		WebDriverManager.chromedriver().setup();
 	}
 	
 	@BeforeSuite
