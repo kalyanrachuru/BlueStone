@@ -20,6 +20,7 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 	public static ExtentTest test ;
 	public static ExtentReports rep;
 	public static WebDriver driver;
+	int passcount=0, failcount=0, skipcount=0;
 	
 	
 	public void onTestStart(ITestResult result) {
@@ -29,16 +30,20 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 	
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, "Passed: "+result.getName());
+		passcount++;
+		
 	}
 
 	
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL, "Failed: "+result.getName());
+		failcount++;
 	}
 
 	
 	public void onTestSkipped(ITestResult result) {
 		test.log(Status.SKIP, "Skipped: "+result.getName());		
+		skipcount++;
 	}
 
 	
@@ -61,6 +66,7 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 		rep.setSystemInfo("Platform", PLATFORM);
 		
 		test = rep.createTest("BlueStone Tests");
+		
 	}
 
 	
@@ -76,6 +82,7 @@ public class TestListener implements ITestListener, IAUTOCONSTANT{
 			e.printStackTrace();
 		}
 		rep.flush();
+		System.out.println();
 	}
 
 
